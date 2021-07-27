@@ -10,6 +10,9 @@ html {
 
 body {
     background-color: black !important;
+    background-image: url("../images/backgrounds/14.png");
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .navbar {
@@ -18,13 +21,13 @@ body {
     font-weight: 400;
 }
 
-.navbar a{
-    color: white!important;
+.navbar a {
+    color: white !important;
     transition: 0.2s ease-in;
 }
 
-.navbar a:hover{
-    color: grey!important;
+.navbar a:hover {
+    color: grey !important;
 }
 
 .navbar-logo {
@@ -59,14 +62,6 @@ body {
 
 .contact-button:hover {
     background-color: darkgrey;
-}
-
-
-.corner-bg-image {
-    height: 100%;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: right bottom;
 }
 
 .main-page-header {
@@ -130,9 +125,9 @@ body {
     max-width: 200px;
 }
 
-.pad-sides{
-    padding-left: 30px!important;
-    padding-right: 30px!important;
+.pad-sides {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
     white-space: nowrap;
 }
 
@@ -467,6 +462,19 @@ a:hover {
     filter: brightness(30%)
 }
 
+.img-container {
+    width: 100%;
+    max-height: 400px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    margin-top: 8px;
+}
+
+.img-gallery {
+    width: 100%;
+    object-fit: cover;
+}
 
 .buttons {
     position: fixed;
@@ -475,7 +483,8 @@ a:hover {
     bottom: 10px;
 }
 
-.top-text{
+
+.top-text {
     color: darkgray;
     padding: 0;
     font-size: 13px;
@@ -483,22 +492,75 @@ a:hover {
     font-weight: 300;
 }
 
-.sub-text{
+.sub-text {
     font-size: 11px;
     padding: 0;
     margin: 0;
     color: darkgrey;
     font-weight: 300;
 }
-.portfolio-header{
+
+.portfolio-header {
     color: white;
     font-weight: 400;
 }
 
-.profile-image{
+.profile-image {
     max-width: 50px;
     margin-top: 5px;
 }
+
+/* ---------------TEST CSS----------------- */
+.img-container {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    margin-top: 8px;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 15%;
+    /* IE10 */
+    flex: 15%;
+    max-width: 15%;
+    padding: 0 4px;
+}
+
+.column-sides {
+    -ms-flex: 20% !important;
+    /* IE10 */
+    flex: 20% !important;
+    max-width: 20% !important;
+    padding: 0 4px;
+}
+
+.column img {
+    object-fit: cover;
+    width: 100%;
+    vertical-align: middle;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+.img-container:hover img {
+    transform: scale(1.2);
+}
+
+
+/*-----*/
 
 @media only screen and (max-width: 767px) {
     .show-on-mobile {
@@ -511,7 +573,7 @@ a:hover {
         display: none !important;
     }
 
-    .pad-sides{
+    .pad-sides {
         padding: 0;
     }
 
@@ -618,9 +680,15 @@ a:hover {
         font-size: 0.6em;
         padding: 0;
     }
-    
-    .selected .carousel-item-text h3{
+
+    .selected .carousel-item-text h3 {
         font-size: 1.2em;
         padding: 0;
+    }
+
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 }
