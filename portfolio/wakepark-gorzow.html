@@ -6,11 +6,12 @@
 
     <title>Współpraca z Wakepark Gorzów - Lucky18 Studios</title>
 
-    <meta name="description"
-    content="Galeria zdjęciowa ze współpracy z firma Wakepark Gorzów">
+    <meta name="description" content="Galeria zdjęciowa ze współpracy z firma Wakepark Gorzów">
 
     <!-- CSS -->
     <link href="../css/master.css" type="text/css" rel="stylesheet" />
+
+    <link rel="canonical" href="https://www.lucky18.com.pl/portfolio/wakepark-gorzow.html" />
 
     <!-- Meta tagi itp-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,7 +37,7 @@
 
     <!--Lozad lazyload-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-    
+
     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
@@ -59,7 +60,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark black-bg">
-        <a class="navbar-brand d-md-none" href="../index.html"><img src="../images/logo_stripe.png"
+        <a class="navbar-brand d-md-none" href="../index.html"><img src="../images/logo_minimal.png"
                 alt="Logo firmy Lucky18 Studios 1" class="navbar-logo"></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,14 +69,14 @@
         <div class="d-md-flex d-block w-100">
             <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="pad-sides nav-item nav-link" href="../index.html">Home</a>
-                    <a class="pad-sides nav-item nav-link" href="../about-us.html">O nas</a>
-                    <a class="pad-sides nav-item nav-link" href="../contact.html">Kontakt</a>
+                    <a class="pad-sides nav-item nav-link active" href="../index.html">Home</a>
+                    <a class="pad-sides nav-item nav-link active" href="../about-us.html">O nas</a>
+                    <a class="pad-sides nav-item nav-link active" href="../contact.html">Kontakt</a>
                     <a class="navbar-brand mx-2 d-none d-md-inline" href="../index.html"><img
-                            src="../images/logo_stripe.png" alt="Logo firmy Lucky18 Studios 3" class="navbar-logo"></a>
-                    <a class="pad-sides nav-item nav-link" href="../photos-menu.html"><i class="bi bi-dot"></i>Zdjęcia</a>
-                    <a class="pad-sides nav-item nav-link" href="../film-menu.html">Filmy</a>
-                    <a class="pad-sides nav-item nav-link" href="../graphics-menu.html">Grafika</a>
+                            src="../images/logo_minimal.png" alt="Logo firmy Lucky18 Studios 3" class="navbar-logo"></a>
+                    <a class="pad-sides nav-item nav-link " href="../photos-menu.html">Zdjęcia</a>
+                    <a class="pad-sides nav-item nav-link active" href="../film-menu.html">Filmy</a>
+                    <a class="pad-sides nav-item nav-link active" href="../graphics-menu.html">Grafika</a>
                 </div>
             </div>
         </div>
@@ -87,7 +88,7 @@
                 <p class="top-text">WSPÓŁPRACA Z</p>
                 <h1 class="portfolio-header">Wakepark Gorzów</h1>
                 <p class="sub-text"><i>Zdjęcia autorstwa Mateusza Szczepkowskiego. Sesja z sierpnia 2020r.</i></p>
-                <img src="../images/szczepkowski.jpg" alt="Zdjęcie Mateusza Szczepkowskiego"
+                <img src="../images/profile/szczepan.jpg" alt="Zdjęcie Mateusza Szczepkowskiego"
                     class="rounded-circle profile-image">
             </div>
         </div>
@@ -218,6 +219,19 @@
 <script>
     const observer = lozad(); // lazy loads elements with default selector as '.lozad'
     observer.observe();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W9CJSWY0MQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W9CJSWY0MQ');
 </script>
 
 </html>

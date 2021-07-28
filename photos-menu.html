@@ -6,11 +6,12 @@
 
     <title>Menu zdjęciowe - Lucky18 Studios</title>
 
-    <meta name="description"
-    content="Menu z odnosnikami do galerii zdjęciowych ze współpracy ze znanymi firmami">
+    <meta name="description" content="Menu z odnosnikami do galerii zdjęciowych ze współpracy ze znanymi firmami">
 
     <!-- CSS -->
     <link href="css/master.css" type="text/css" rel="stylesheet" />
+
+    <link rel="canonical" href="https://www.lucky18.com.pl/photos-menu.html" />
 
     <!-- Meta tagi itp-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,7 +56,7 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark black-bg">
-        <a class="navbar-brand d-md-none" href="index.html"><img src="images/logo_stripe.png"
+        <a class="navbar-brand d-md-none" href="index.html"><img src="images/logo_minimal.png"
                 alt="Logo firmy Lucky18 Studios 1" class="navbar-logo"></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,14 +65,14 @@
         <div class="d-md-flex d-block w-100">
             <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="pad-sides nav-item nav-link" href="index.html">Home</a>
-                    <a class="pad-sides nav-item nav-link" href="about-us.html">O nas</a>
-                    <a class="pad-sides nav-item nav-link" href="contact.html">Kontakt</a>
-                    <a class="navbar-brand mx-2 d-none d-md-inline" href="index.html"><img src="images/logo_stripe.png"
+                    <a class="pad-sides nav-item nav-link active" href="index.html">Home</a>
+                    <a class="pad-sides nav-item nav-link active" href="about-us.html">O nas</a>
+                    <a class="pad-sides nav-item nav-link active" href="contact.html">Kontakt</a>
+                    <a class="navbar-brand mx-2 d-none d-md-inline" href="index.html"><img src="images/logo_minimal.png"
                             alt="Logo firmy Lucky18 Studios 2" class="navbar-logo"></a>
-                    <a class="pad-sides nav-item nav-link" href="photos-menu.html"><i class="bi bi-dot"></i>Zdjęcia</a>
-                    <a class="pad-sides nav-item nav-link" href="film-menu.html">Filmy</a>
-                    <a class="pad-sides nav-item nav-link" href="graphics-menu.html">Grafika</a>
+                    <a class="pad-sides nav-item nav-link" href="photos-menu.html">Zdjęcia</a>
+                    <a class="pad-sides nav-item nav-link active" href="film-menu.html">Filmy</a>
+                    <a class="pad-sides nav-item nav-link active" href="graphics-menu.html">Grafika</a>
                 </div>
             </div>
         </div>
@@ -93,14 +94,15 @@
 
                     <div class="prevLeftSecond" id="slide-container">
                         <div id="carousel-item-container">
-                            <img src="images/portfolio/lubie-slodkie-slone/2.jpg"
+                            <img src="images/portfolio/landsberg-verein/7.jpg"
                                 alt="Zdjęcie podglądowe galerii zdjęć zrobionych dla firmy Lubie Słodkie Słone"
                                 class="preview-image">
 
                             <div class="carousel-item-text">
                                 <p>Współpraca z</p>
                                 <h3>Landsberg Verein</h3>
-                                <a href=""><button class="gallery-button">Galeria</button></a>
+                                <a href="portfolio/landsberg-verein.html"><button
+                                        class="gallery-button">Galeria</button></a>
                             </div>
                         </div>
                     </div>
@@ -286,6 +288,19 @@
     $('#next').click(function () {
         moveToSelected('next');
     });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W9CJSWY0MQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W9CJSWY0MQ');
 </script>
 
 
