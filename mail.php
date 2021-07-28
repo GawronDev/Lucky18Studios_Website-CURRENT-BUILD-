@@ -5,7 +5,7 @@ $message = $_POST['message'];
 $subject = $_POST['subject'];
 header('Content-Type: application/json');
 if ($name === ''){
-print json_encode(array('message' => 'Name cannot be empty', 'code' => 0));
+print json_encode(array('message' => 'Imie nie moze być puste', 'code' => 0));
 exit();
 }
 if ($email === ''){
