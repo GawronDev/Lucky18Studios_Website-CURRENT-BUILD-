@@ -494,6 +494,12 @@ a:hover {
     font-size: 15px;
 }
 
+.links-list a {
+    color: white;
+    decoration: none;
+    transition: 0.5s ease-in;
+}
+
 .carousel-item-text h3 {
     margin-left: -100%;
     margin-right: -100%;
@@ -577,6 +583,12 @@ a:hover {
 .img-gallery {
     width: 100%;
     object-fit: cover;
+}
+
+.form-container {
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .buttons {
@@ -890,11 +902,11 @@ a:hover {
 
 @media only screen and (max-width: 576px) {
     .main-page-header {
-        font-size: 2.0em;
+        font-size: 2em;
     }
 
     .main-page-text {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .whitespaces {
