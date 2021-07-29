@@ -124,6 +124,7 @@ body {
 
 .brand-logo {
     max-width: 200px;
+    margin-top: 30px;
 }
 
 .pad-sides {
@@ -290,6 +291,22 @@ a:hover {
     /* transition: transform 5s ease-out, filter 2s ease-out, width 2s ease-out, height 2s ease-out, z-index 0s ease-out; */
     transition: 2s ease-in-out, z-index 0s ease-out, filter 2s ease-out, transform 2s ease-out;
     opacity: 1;
+}
+
+.carousel-collapsed{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    z-index: 5;
+    margin: 100px auto;
+}
+
+.carousel-collapsed .preview-image{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    transform: translateY(0%) translateX(0%);
 }
 
 .privacy-container h1 {
