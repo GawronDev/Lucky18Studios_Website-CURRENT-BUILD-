@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://www.lucky18.com.pl/sitemap.xml
+Sitemap: https://www.lucky18.com.pl/sitemap.xml

@@ -4,9 +4,25 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Menu filmowe - Lucky18 Studios</title>
+    <title>Menu filmowe - Lucky18 Studios - Zajmiemy się twoją firmą!</title>
 
-    <meta name="description" content="Menu z odnosnikami do filmów ze współpracy ze znanymi firmami">
+    <meta name="description"
+        content="Menu z odnosnikami do filmów ze współpracy ze znanymi firmami. Wszystkie filmy mona znaleźć na naszym kanale YouTube Lucky18 Studios oraz własnie na tej stronie w zintegrowanych odtwarzaczach.">
+
+    <meta name="robots" content="index,follow">
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Strona głowna - Lucky18 Studios" />
+
+    <meta property="og:description"
+        content="Brandcare, webdesign, banery, wizytówki, pozycjonowanie stron, reklam, zdjęcia produktowe - wszystko dla Ciebie w Lucky18 Studios" />
+
+    <meta property="og:image" content="https://www.lucky18.com.pl/images/logo_stripe.png" />
+
+    <meta property="og:url" content="https://www.lucky18.com.pl/" />
+
+    <meta property="og:site_name" content="Lucky18 Studios Strona główna" />
 
     <!-- CSS -->
     <link href="css/master.css" type="text/css" rel="stylesheet" />
@@ -52,6 +68,20 @@
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203465474-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-203465474-1');
+    </script>
+
 </head>
 
 <body>
@@ -70,8 +100,8 @@
                     <a class="pad-sides nav-item nav-link active" href="contact.html">Kontakt</a>
                     <a class="navbar-brand mx-2 d-none d-md-inline" href="index.html"><img src="images/logo_minimal.png"
                             alt="Logo firmy Lucky18 Studios 2" class="navbar-logo"></a>
-                    <a class="pad-sides nav-item nav-link" href="photos-menu.html">Zdjęcia</a>
-                    <a class="pad-sides nav-item nav-link active" href="film-menu.html">Filmy</a>
+                    <a class="pad-sides nav-item nav-link active" href="photos-menu.html">Zdjęcia</a>
+                    <a class="pad-sides nav-item nav-link" href="film-menu.html">Filmy</a>
                     <a class="pad-sides nav-item nav-link active" href="graphics-menu.html">Grafika</a>
                 </div>
             </div>
@@ -87,7 +117,8 @@
         </div>
     </div>
 
-    <div class="container-fluid hide-on-mobile" style="margin-top: 150px; padding-left: 0px; padding-right: 0px;">
+    <div class="container-fluid hide-on-smaller-screen"
+        style="margin-top: 150px; padding-left: 0px; padding-right: 0px;">
         <div class="row">
             <div class="col-md-12 justify-content-center">
                 <div id="film-carousel-container">
@@ -151,26 +182,44 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
-                
-                <a id="prev-button" ><img src="images/arrow-icon-left.png" alt="Ikona strzałki w lewo"></a>
-                <a id="next-button" ><img src="images/arrow-icon-right.png" alt="Ikona strzałki w right"></a>
-                
-            </div>
-        </div>
-    </div>
 
-    <div class="container-fluid show-on-mobile">
-        <div class="row justify-content-center">
-            <div class="col-xs-12">
-
+                <a id="prev-button"><img src="images/arrow-icon-left.png" alt="Ikona strzałki w lewo"></a>
+                <a id="next-button"><img src="images/arrow-icon-right.png" alt="Ikona strzałki w right"></a>
 
             </div>
         </div>
+    </div>
+
+
+    <div class="container-fluid show-on-smaller-screen">
+
+        <div class="embed-responsive embed-responsive-16by9 resp-video">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2tvGjPo66Uo?controls=0"></iframe>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9 resp-video">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yOmMxQxwBsE?controls=0"></iframe>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9 resp-video">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AKr9sNXUdr4?controls=0"></iframe>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9 resp-video">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PVwxEBwJmZs?controls=0"></iframe>
+        </div>
+
+        <div class="embed-responsive embed-responsive-16by9 resp-video">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rT07hSxSNHM?controls=0"></iframe>
+        </div>
 
     </div>
-    </div>
+
+
+
+
 
     <footer class="container-fluid bg-grey py-5 main-footer" style="margin-top: 600px;">
         <div class="container">
@@ -217,11 +266,13 @@
                         <div class="col-md-6 ">
                             <h6>Media społcznościowe</h6>
                             <div class="social">
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-youtube"></i></a>
+                                <a href="https://www.facebook.com/Lucky18-Studios-104725935222175/"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/lucky18studios"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                                <a href="https://www.youtube.com/channel/UCXlWaTlA1HbxibHAMLAUZtg"><i
+                                        class="bi bi-youtube"></i></a>
                             </div>
                         </div>
                     </div>

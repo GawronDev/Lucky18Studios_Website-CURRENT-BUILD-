@@ -323,7 +323,7 @@ a:hover {
     position: absolute;
     left: 90%;
     width: 70px;
-    transform: translateY(120px) translateX(-400px);
+    transform: translateY(180px) translateX(-300px);
     transition: 0.05s ease-in;
 }
 
@@ -331,8 +331,8 @@ a:hover {
 #prev-button img{
     position: absolute;
     width: 70px;
-    left: 10%;
-    transform: translateY(120px) translateX(320px);
+    left: 10.5%;
+    transform: translateY(180px) translateX(220px);
     transition: 0.05s ease-in;
 
 }
@@ -359,9 +359,24 @@ a:hover {
     opacity: 1;
 }
 
+.film-carousel-collapsed {
+    width: 90%;
+    height: 290px;
+    background-color: white;
+    text-align: center;
+    z-index: 5;
+    margin: 100px auto;
+}
+
+.resp-video{
+    margin-top: 100px;
+    border: 10px solid white;
+    border-radius: 10px;
+}
+
 .film-selected #carousel-item-container {
-    width: 560px;
-    height: 325px;
+    width: 760px;
+    height: 435px;
     background-color: white;
     z-index: 5;
     border: 10px solid white;
@@ -369,8 +384,8 @@ a:hover {
 }
 
 .film-prev #carousel-item-container {
-    width: 560px;
-    height: 325px;
+    width: 760px;
+    height: 435px;
     background-color: white;
     text-align: center;
     z-index: 3;
@@ -379,8 +394,8 @@ a:hover {
 }
 
 .film-next #carousel-item-container {
-    width: 560px;
-    height: 325px;
+    width: 760px;
+    height: 435px;
     background-color: white;
     text-align: center;
     z-index: 3;
@@ -389,8 +404,8 @@ a:hover {
 }
 
 .film-prevLeftSecond #carousel-item-container {
-    width: 560px;
-    height: 325px;
+    width: 760px;
+    height: 435px;
     background-color: white;
     text-align: center;
     z-index: 2;
@@ -399,8 +414,8 @@ a:hover {
 }
 
 .film-nextRightSecond #carousel-item-container {
-    width: 560px;
-    height: 325px;
+    width: 760px;
+    height: 435px;
     background-color: white;
     text-align: center;
     z-index: 2;
@@ -451,6 +466,15 @@ a:hover {
     left: 50%;
     transform: translateY(0px) translateX(-50%);
     filter: brightness(30%)
+}
+
+.show-on-smaller-screen{
+    display: none;
+    visibility: hidden;
+}
+
+.hide-on-smaller-screen{
+    visibility: visible;
 }
 
 .video-responsive{
@@ -857,6 +881,18 @@ a:hover {
 
 
 /*-----*/
+
+@media only screen and (max-width: 1795px){
+    .show-on-smaller-screen{
+        display: block;
+        visibility: visible;
+    }
+    
+    .hide-on-smaller-screen{
+        visibility: hidden;
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .show-on-mobile {
