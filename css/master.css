@@ -15,11 +15,16 @@ body {
     background-repeat: repeat;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 .navbar {
     font-family: Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    z-index: 99;
 }
 
 .navbar a {
@@ -37,15 +42,126 @@ body {
     padding-top: 5px;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.navbar-logo-big {
+    max-width: 120px;
+    padding-bottom: 0px;
+    padding-top: 5px;
+}
+
+.fixedBrand {
+    z-index: 99;
+    position: fixed !important;
+    top: 10px;
+    left: 10px;
+}
+
+.fixed-menu .navbar-toggler {
+    position: fixed !important;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+}
+
+.fixed-collapse {
+    position: fixed !important;
+    right: 20px;
+    top: 20px;
+}
+
+.fixedMenu {
+    z-index: 99;
+    position: fixed !important;
+    top: 10px;
+    right: 5px;
+}
+
 .hide-on-mobile {
     visibility: visible;
     display: block;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
 }
 
 .show-on-mobile {
     visibility: hidden;
     display: none;
 }
+
+.full-container {
+    height: 100vh;
+    width: 100vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.col-with-bg {
+    width: 50vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.col-with-bg h2 {
+    color: white;
+    font-size: 4em;
+}
+
+
+.col-with-bg p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+
+.col-with-bg button {
+    color: white;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(68, 68, 68, 1);
+    margin-top: 50px;
+    border: none;
+    transition: 1s ease-in;
+}
+
+.col-with-bg button:hover {
+    background-color: darkgrey;
+}
+
+.col-with-bg button a {
+    color: white;
+}
+
+.col-no-bg {
+    width: 50vw;
+    height: 100vh;
+}
+
+.full-text-container {
+    position: absolute;
+    /* 2 */
+    top: 50%;
+    /* 3 */
+    transform: translate(0, -50%)
+}
+
+ul span {
+    background: white !important;
+}
+
 
 .contact-button {
     max-height: 100px;
@@ -319,7 +435,7 @@ a:hover {
     overflow: auto;
 }
 
-#next-button img{
+#next-button img {
     position: absolute;
     left: 90%;
     width: 70px;
@@ -328,7 +444,7 @@ a:hover {
 }
 
 
-#prev-button img{
+#prev-button img {
     position: absolute;
     width: 70px;
     left: 10.5%;
@@ -337,12 +453,12 @@ a:hover {
 
 }
 
-#next-button img:active{
+#next-button img:active {
     width: 65px;
 }
 
 
-#prev-button img:active{
+#prev-button img:active {
     width: 65px;
 
 }
@@ -368,7 +484,7 @@ a:hover {
     margin: 100px auto;
 }
 
-.resp-video{
+.resp-video {
     margin-top: 100px;
     border: 10px solid white;
     border-radius: 10px;
@@ -423,11 +539,11 @@ a:hover {
     border-radius: 10px;
 }
 
-.film-prev iframe{
+.film-prev iframe {
     pointer-events: none
 }
 
-.film-next iframe{
+.film-next iframe {
     pointer-events: none
 }
 
@@ -468,27 +584,28 @@ a:hover {
     filter: brightness(30%)
 }
 
-.show-on-smaller-screen{
+.show-on-smaller-screen {
     display: none;
     visibility: hidden;
 }
 
-.hide-on-smaller-screen{
+.hide-on-smaller-screen {
     visibility: visible;
 }
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 
@@ -854,6 +971,14 @@ a:hover {
     padding: 0 4px;
 }
 
+.column-graphics {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
 .column-sides {
     -ms-flex: 20% !important;
     /* IE10 */
@@ -882,13 +1007,68 @@ a:hover {
 
 /*-----*/
 
-@media only screen and (max-width: 1795px){
-    .show-on-smaller-screen{
+.card {
+    border: 3px solid white !important;
+    border-radius: 50px !important;
+    padding: 10px 0px;
+    background-color: rgba(255, 255, 255, 0) !important;
+    transition: 0.5s ease-in;
+}
+
+.card h5 {
+    color: white;
+}
+
+.card p {
+    color: white;
+}
+
+.card li {
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: white;
+    border: none;
+}
+
+.table-responsive th {
+    color: white;
+}
+
+.table-responsive tr {
+    color: white;
+}
+
+.card::after {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+    transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    backface-visibility: hidden;
+    will-change: transform;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .75) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.offer-header {
+    color: white;
+}
+
+@media only screen and (max-width: 1795px) {
+    .show-on-smaller-screen {
         display: block;
         visibility: visible;
     }
-    
-    .hide-on-smaller-screen{
+
+    .hide-on-smaller-screen {
         visibility: hidden;
         display: none;
     }
@@ -1111,6 +1291,27 @@ a:hover {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transition: width 2s, height 2s;
     }
+
+    .col-with-bg {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .col-no-bg {
+        width: 0vw;
+        height: 0vh;
+    }
+
+    .full-text-container {
+        position: absolute;
+        /* 2 */
+        top: 50%;
+        /* 3 */
+        transform: translate(0, -50%)
+    }
+
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -1124,5 +1325,52 @@ a:hover {
 
     .whitespaces {
         display: none;
+    }
+
+    .privacy-container h1 {
+        color: white;
+        font-size: 1em;
+    }
+
+    .privacy-container p {
+        color: white;
+        font-size: 0.6em;
+
+    }
+
+    .privacy-container a {
+        color: white;
+        font-size: 0.8em;
+    }
+
+    .privacy-container h2 {
+        color: white;
+        font-size: 0.9em;
+
+    }
+
+    .privacy-container h3 {
+        color: white;
+        font-size: 0.85em;
+
+    }
+
+    .privacy-container li {
+        color: white;
+        font-size: 0.6em;
+
+    }
+
+    .col-with-bg h2 {
+        color: white;
+        font-size: 3em;
+    }
+
+
+    .col-with-bg p {
+        color: white;
+        font-size: 1em;
+        font-weight: 200;
+        margin-bottom: 0;
     }
 }

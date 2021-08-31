@@ -1,9 +1,18 @@
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{HTTP_HOST} !^www.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+# RewriteCond %{HTTP_HOST} !^www.
+# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
-RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ http://www.lucky18.com.pl/$1 [R=301,L]
+# RewriteCond %{THE_REQUEST} ^.*/index.html
+# RewriteRule ^(.*)index.html$ http://www.lucky18.com.pl/$1 [R=301,L]
+
+RewriteEngine on
+# http to https and non-www to www
+RewriteCond %{ENV:HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$
+RewriteRule ^.*$ https://www.%1%{REQUEST_URI} [NE,R=301,L]
+# remove index.html
+RewriteRule ^(.*)\.index\.html$ /$1 [L,R=301]
